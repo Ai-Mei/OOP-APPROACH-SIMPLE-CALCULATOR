@@ -5,6 +5,7 @@ from OPERATIONS import Operation
 ui = UserInterface()
 operation = Operation()
 
+ui.Introduction()
 
 while True:
     # Ask the user for 2 innput numbers.
