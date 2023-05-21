@@ -42,3 +42,16 @@ class UserInterface:
                 operation_choice = self.OperationChoice()
 
     # Asks the user to either repeat the program.
+    def Repeat(self):
+        while True:
+            decision = input("Do you want to do more calculations?  Type Yes or No: ")
+            if decision.lower() == "yes":
+                return True
+                break
+            if decision.lower() == "no":
+                print("Process done, thank you for using My Calculator.")
+                return False
+                break
+            else:
+                print("⚠️ Please type in only Yes or No.")
+                continue
